@@ -292,21 +292,27 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   addScreenButtonsContainer: {
-    flexDirection: "row",
-    justifyContent: "center",
-    marginTop: 20,
-    marginBottom: 30,
-  },
-  cancelButton: { 
-    backgroundColor: "gray", 
-    width: "44%",
-    marginRight: 10,
-  },
-  saveButton: { 
-    backgroundColor: "green", 
-    width: "44%",
-    marginLeft: 10,
-  },
+  flexDirection: "row",
+  justifyContent: "space-between",
+  marginTop: 20,
+  marginBottom: 30,
+  paddingHorizontal: 10,
+  width: "100%",
+},
+cancelButton: { 
+  backgroundColor: "gray", 
+  flex: 1,
+  marginRight: 10,
+  padding: 12,
+  borderRadius: 8,
+},
+saveButton: { 
+  backgroundColor: "green", 
+  flex: 1,
+  marginLeft: 10,
+  padding: 12,
+  borderRadius: 8,
+},
 });
 
 export default AddScreen;
